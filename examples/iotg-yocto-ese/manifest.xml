@@ -17,25 +17,25 @@
   <project name="openembedded-core"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling"
-           revision="08ab1f02da65ee9815115e6a1cdb51ffed10a2dc" />
+           revision="717b9f18a51e9c9fd5a471238aa2ea4de439ef17" />
 
   <!-- https://git.openembedded.org/meta-openembedded/log/?h=kirkstone -->
   <project name="meta-openembedded"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/meta-openembedded"
-           revision="571e36e20e9d1f27af0eb4545291beeb64f280e2" />
+           revision="5f120a926b0fcd55cfe7565bb7ddf23661cad498" />
 
   <!-- https://git.openembedded.org/bitbake/log/?h=2.0 -->
   <project name="bitbake"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/bitbake"
-           revision="9bbdedc0ba7ca819b898e2a29a151d6a2014ca11" />
+           revision="0c6f86b60cfba67c20733516957c0a654eb2b44c" />
 
   <!-- https://git.yoctoproject.org/meta-intel/log/?h=kirkstone -->
   <project name="meta-intel"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-intel"
-           revision="4c6cc14669d0e9de36e1a050ce4084ca14181722" />
+           revision="eb696e99ff8c5be4f9b181da9f134499d96760e4" />
 
   <project name="intel/iotg-yocto-ese-main"
            remote="github.com"
