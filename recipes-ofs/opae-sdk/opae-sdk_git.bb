@@ -11,6 +11,7 @@ DEPENDS = "\
     hwloc \
     json-c \
     libedit \
+    numactl \
     python3 \
     python3-jsonschema-native \
     python3-pip-native \
