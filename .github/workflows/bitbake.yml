@@ -21,7 +21,7 @@ jobs:
       volumes:
         - bitbake:/bitbake
     env:
-      IMAGE_DIR: build/tmp-x86-2021-minimal-glibc/deploy/images/intel-corei7-64
+      IMAGE_DIR: build/tmp-x86-2022-minimal-glibc/deploy/images/intel-corei7-64
     steps:
       - name: Mangle git ref name
         run: |
@@ -57,7 +57,7 @@ jobs:
         run: |
           cd build
           . ../intel-embedded-system-enabling/oe-init-build-env .
-          bitbake -k mc:x86-2021-minimal:core-image-full-cmdline
+          bitbake -k mc:x86-2022-minimal:core-image-full-cmdline
       - name: Query Yocto image name
         run: |
           TARGET=$(readlink "$IMAGE_DIR"/core-image-full-cmdline-intel-corei7-64.wic.gz)

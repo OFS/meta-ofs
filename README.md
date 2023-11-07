@@ -57,12 +57,12 @@ Build packages and create an image:
 ```
 cd build
 . ../intel-embedded-system-enabling/oe-init-build-env .
-bitbake mc:x86-2021-minimal:core-image-full-cmdline
+bitbake mc:x86-2022-minimal:core-image-full-cmdline
 ```
 
 The resulting GPT disk image is available in uncompressed (`.wic`) and
 compressed form (`.wic.gz`) in
-`build/tmp-x86-2021-minimal-glibc/deploy/images/intel-corei7-64/`.
+`build/tmp-x86-2022-minimal-glibc/deploy/images/intel-corei7-64/`.
 
 The [image type](https://docs.yoctoproject.org/ref-manual/images.html)
 `core-image-full-cmdline` includes the familiar GNU core utilities,
