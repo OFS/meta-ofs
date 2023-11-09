@@ -17,40 +17,40 @@
   <project name="openembedded-core"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling"
-           revision="08ab1f02da65ee9815115e6a1cdb51ffed10a2dc" />
+           revision="0eb8e67aa6833df0cde29833568a70e65c21d7e5" />
 
   <!-- https://git.openembedded.org/meta-openembedded/log/?h=kirkstone -->
   <project name="meta-openembedded"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/meta-openembedded"
-           revision="571e36e20e9d1f27af0eb4545291beeb64f280e2" />
+           revision="7da6cb848bc42b3e6bd5d2b37b52ba75510a6ca0" />
 
   <!-- https://git.openembedded.org/bitbake/log/?h=2.0 -->
   <project name="bitbake"
            remote="git.openembedded.org"
            path="intel-embedded-system-enabling/bitbake"
-           revision="9bbdedc0ba7ca819b898e2a29a151d6a2014ca11" />
+           revision="6c1ffa9091d0c53a100e8c8c15122d28642034bd" />
 
   <!-- https://git.yoctoproject.org/meta-intel/log/?h=kirkstone -->
   <project name="meta-intel"
            remote="git.yoctoproject.org"
            path="intel-embedded-system-enabling/meta-intel"
-           revision="4c6cc14669d0e9de36e1a050ce4084ca14181722" />
+           revision="3f0115e9e59f94af54b74838f4f33339ea7584ae" />
 
   <project name="intel/iotg-yocto-ese-main"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-iot-main"
-           revision="2b0b4f37ce7b803bb92050d04b8c6d7061c60149" />
+           revision="5a847c67d4bf358e49a2be07585ed812f1d1de92" />
 
   <project name="intel/iotg-yocto-ese"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-distro"
-           revision="1bf4a8b5287cfbd5a7f728788bcce783a51c55f4" />
+           revision="c4777da87784a647658d56c8a9f084a358097991" />
 
   <project name="intel/iotg-yocto-ese-bsp"
            remote="github.com"
            path="intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-iot-bsp"
-           revision="bf342b713b139a9310d393623a930ed78156ccfb" />
+           revision="f0d23fa4613b54740db56163f3e6205f0efa3b3c" />
 
   <project name="OFS/meta-ofs"
            remote="github.com"
