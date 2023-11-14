@@ -1,0 +1,25 @@
+[submodule "examples/iotg-yocto-ese/openembedded-core"]
+	path = examples/iotg-yocto-ese/openembedded-core
+	url = https://git.openembedded.org/openembedded-core
+	branch = kirkstone
+[submodule "examples/iotg-yocto-ese/meta-openembedded"]
+	path = examples/iotg-yocto-ese/meta-openembedded
+	url = https://git.openembedded.org/meta-openembedded
+	branch = kirkstone
+[submodule "examples/iotg-yocto-ese/bitbake"]
+	path = examples/iotg-yocto-ese/bitbake
+	url = https://git.openembedded.org/bitbake
+	branch = 2.0
+[submodule "examples/iotg-yocto-ese/meta-intel"]
+	path = examples/iotg-yocto-ese/meta-intel
+	url = https://git.yoctoproject.org/meta-intel
+	branch = kirkstone
+[submodule "examples/iotg-yocto-ese/iotg-yocto-ese-main"]
+	path = examples/iotg-yocto-ese/iotg-yocto-ese-main
+	url = https://github.com/intel/iotg-yocto-ese-main
+[submodule "examples/iotg-yocto-ese/iotg-yocto-ese-bsp"]
+	path = examples/iotg-yocto-ese/iotg-yocto-ese-bsp
+	url = https://github.com/intel/iotg-yocto-ese-bsp
+[submodule "examples/iotg-yocto-ese/iotg-yocto-ese"]
+	path = examples/iotg-yocto-ese/iotg-yocto-ese
+	url = https://github.com/intel/iotg-yocto-ese

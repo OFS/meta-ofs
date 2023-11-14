@@ -1,12 +1,7 @@
 FROM debian:bookworm
 
 # https://docs.yoctoproject.org/ref-manual/system-requirements.html#ubuntu-and-debian
-#
-# The repo tool is available from the contrib archive
-# area, due to an incompatibility with Debian Policy.
-# https://bugs.debian.org/855846
-RUN sed -i 's#^Components: main$#& contrib#' /etc/apt/sources.list.d/debian.sources \
-    && apt-get -y update \
+RUN apt-get -y update \
     && DEBIAN_FRONTEND=noninteractive apt-get -y dist-upgrade \
     build-essential \
     chrpath \
@@ -30,7 +25,6 @@ RUN sed -i 's#^Components: main$#& contrib#' /etc/apt/sources.list.d/debian.sour
     python3-pexpect \
     python3-pip \
     python3-subunit \
-    repo \
     socat \
     texinfo \
     unzip \

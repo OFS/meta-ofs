@@ -34,29 +34,19 @@ The build needs more than 100 GiB of disk space. As a reference point, on a
 system with two Intel(R) Xeon(R) E5-2699 v4 for a total of 44 CPU cores,
 the initial, non-incremental build takes less than an hour of wall time.
 
-The [`repo`](https://gerrit.googlesource.com/git-repo#install) tool is
-needed to clone the various [Yocto layer
-repositories](https://github.com/OFS/meta-ofs/blob/main/examples/iotg-yocto-ese/manifest.xml)
-used in this example.
-
-Create and initialize the source directory:
+Fetch meta-ofs with
+[submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) containing
+requisite Yocto layers:
 
 ```
-mkdir ofs-yocto && cd ofs-yocto
-repo init -m examples/iotg-yocto-ese/manifest.xml https://github.com/OFS/meta-ofs
-```
-
-Fetch repositories and update the working tree:
-
-```
-repo sync -j 16
+git clone --recurse-submodules --shallow-submodules https://github.com/OFS/meta-ofs
 ```
 
 Build packages and create an image:
 
 ```
-cd build
-. ../intel-embedded-system-enabling/oe-init-build-env .
+cd meta-ofs/examples/iotg-yocto-ese
+TEMPLATECONF=$PWD/conf source openembedded-core/oe-init-build-env build
 bitbake mc:x86-2022-minimal:core-image-full-cmdline
 ```
 
@@ -68,12 +58,12 @@ The [image type](https://docs.yoctoproject.org/ref-manual/images.html)
 `core-image-full-cmdline` includes the familiar GNU core utilities,
 as opposed to `core-image-minimal` which uses BusyBox instead.
 
-The example build configuration files under `build/conf/` are symlinked from
-[`examples/iotg-yocto-ese/`](https://github.com/OFS/meta-ofs/tree/main/examples/iotg-yocto-ese).
+The example build configuration files under `build/conf/` are copied from
+[`examples/iotg-yocto-ese/conf/`](https://github.com/OFS/meta-ofs/tree/main/examples/iotg-yocto-ese/conf).
 To customise the image, start by modifying
-[`local.conf`](https://github.com/OFS/meta-ofs/tree/main/examples/iotg-yocto-ese/local.conf)
+[`build/conf/local.conf`](https://github.com/OFS/meta-ofs/tree/main/examples/iotg-yocto-ese/conf/local.conf.sample)
 and
-[`bblayers.conf`](https://github.com/OFS/meta-ofs/tree/main/examples/iotg-yocto-ese/bblayers.conf).
+[`build/conf/bblayers.conf`](https://github.com/OFS/meta-ofs/tree/main/examples/iotg-yocto-ese/conf/bblayers.conf.sample).
 
 ## Writing a Yocto image
 
