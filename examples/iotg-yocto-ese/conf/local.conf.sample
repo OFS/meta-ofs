@@ -46,7 +46,6 @@ IMAGE_INSTALL:append = " \
     lmsensors \
     opae-sdk \
     pciutils \
-    perf \
     python3-pip \
     rsync \
     usbutils \
