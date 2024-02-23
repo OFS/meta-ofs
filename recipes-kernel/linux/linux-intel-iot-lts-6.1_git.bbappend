@@ -2,7 +2,7 @@ KBRANCH = "fpga-ofs-dev-6.1-lts"
 KERNEL_SRC_URI = "git://github.com/OFS/linux-dfl;protocol=https;branch=${KBRANCH};name=machine"
 SRC_URI = "${KERNEL_SRC_URI}"
 SRCREV_meta = "${AUTOREV}"
-SRCREV_machine = "ba2f178179b59dda22134ed6f4a162bf07b30be9"
+SRCREV_machine = "6b0d820d436dda1e5949205a8f081fe0360c8430"
 LINUX_VERSION = "6.1"
 LINUX_VERSION_EXTENSION = "-dfl-${@bb.fetch2.get_srcrev(d).split('_')[1]}"
 
