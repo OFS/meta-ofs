@@ -3,7 +3,7 @@ HOMEPAGE = "https://github.com/OFS/opae-sdk"
 LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://COPYING;md5=5351f05d1aa340cb91bb885c2fd82fc7"
 SRC_URI = "git://github.com/OFS/opae-sdk;protocol=https;branch=release/2.12.0"
-SRCREV = "b2a529706f23ecd9387e54e1d6ba016a287a82b3"
+SRCREV = "e9e9ac8fcdce89dddfcae645448eb37321033132"
 S = "${WORKDIR}/git"
 
 DEPENDS = "\
