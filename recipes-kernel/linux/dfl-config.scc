@@ -1,3 +1,0 @@
-# Include kernel configuration parameters to enable linux-dfl driver
-# https://github.com/OFS/linux-dfl/wiki/Build-the-linux-dfl-kernel#configure-the-kernel
-kconf hardware configs/dfl-config
